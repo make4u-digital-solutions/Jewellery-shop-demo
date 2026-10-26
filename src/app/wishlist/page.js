@@ -49,9 +49,9 @@ export default function WishlistPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         {items.length === 0 ? (
-          <div className="bg-[#FFFFFF] border border-[#E6DED3] p-12 sm:p-20 text-center max-w-2xl mx-auto my-8">
-            <div className="w-16 h-16 rounded-full bg-[#F7F3ED] flex items-center justify-center mx-auto mb-5 text-[#C6A66B]">
-              <Heart className="w-8 h-8" />
+          <div className="bg-[#FFFFFF] border border-[#E6DED3] p-6 sm:p-12 md:p-16 text-center max-w-2xl mx-auto my-6 sm:my-8">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#F7F3ED] flex items-center justify-center mx-auto mb-5 text-[#C6A66B]">
+              <Heart className="w-7 h-7 sm:w-8 sm:h-8" />
             </div>
             <h2 className="font-serif-luxury text-2xl sm:text-3xl text-[#27231F] mb-3">
               Your Wishlist is Empty

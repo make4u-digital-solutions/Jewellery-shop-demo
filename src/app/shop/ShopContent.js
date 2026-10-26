@@ -145,47 +145,47 @@ export default function ShopContent() {
       {/* Main Content Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         {/* Controls Bar (Product Count, Mobile Filter Trigger, Sort Select) */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-[#E6DED3] gap-4">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 sm:pb-6 mb-6 sm:mb-8 border-b border-[#E6DED3] gap-3 sm:gap-4">
+          <div className="flex items-center justify-between sm:justify-start gap-3 sm:gap-4 w-full sm:w-auto">
             <button
               onClick={() => setMobileFilterOpen(true)}
-              className="lg:hidden flex items-center gap-2 py-2 px-4 border border-[#27231F] text-[#27231F] text-xs uppercase tracking-widest font-medium"
+              className="lg:hidden flex items-center gap-1.5 py-2 px-3 border border-[#27231F] text-[#27231F] text-[11px] sm:text-xs uppercase tracking-widest font-medium"
             >
-              <SlidersHorizontal className="w-4 h-4" />
+              <SlidersHorizontal className="w-3.5 h-3.5 text-[#C6A66B]" />
               <span>Filters {activeFiltersCount > 0 && `(${activeFiltersCount})`}</span>
             </button>
-            <p className="text-xs uppercase tracking-widest text-[#81786F]">
+            <p className="text-[11px] sm:text-xs uppercase tracking-widest text-[#81786F]">
               Showing <span className="text-[#27231F] font-medium">{sortedProducts.length}</span> Creations
             </p>
           </div>
 
-          <div className="flex items-center gap-3 self-end sm:self-auto">
+          <div className="flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
             {activeFiltersCount > 0 && (
               <button
                 onClick={resetFilters}
-                className="text-xs text-[#81786F] hover:text-[#27231F] flex items-center gap-1 transition-colors underline underline-offset-4"
+                className="text-[11px] sm:text-xs text-[#81786F] hover:text-[#27231F] flex items-center gap-1 transition-colors underline underline-offset-4"
               >
                 <RotateCcw className="w-3 h-3" />
                 <span>Reset Filters</span>
               </button>
             )}
-            <div className="relative flex items-center">
-              <label htmlFor="sort-select" className="text-xs uppercase tracking-wider text-[#81786F] mr-2">
+            <div className="relative flex items-center ml-auto sm:ml-0">
+              <label htmlFor="sort-select" className="text-[11px] sm:text-xs uppercase tracking-wider text-[#81786F] mr-1.5 sm:mr-2">
                 Sort:
               </label>
               <select
                 id="sort-select"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="text-xs font-medium text-[#27231F] bg-[#FFFFFF] border border-[#E6DED3] py-2 pl-3 pr-8 rounded-none focus:outline-hidden focus:border-[#C6A66B] appearance-none cursor-pointer"
+                className="text-xs font-medium text-[#27231F] bg-[#FFFFFF] border border-[#E6DED3] py-2 pl-2.5 pr-7 rounded-none focus:outline-hidden focus:border-[#C6A66B] appearance-none cursor-pointer"
               >
-                <option value="featured">Featured Creations</option>
-                <option value="newest">Newest Arrivals</option>
-                <option value="bestseller">Bestselling Pieces</option>
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="bestseller">Bestsellers</option>
                 <option value="price-asc">Price: Low to High</option>
                 <option value="price-desc">Price: High to Low</option>
               </select>
-              <ChevronDown className="w-3.5 h-3.5 text-[#81786F] absolute right-2.5 pointer-events-none" />
+              <ChevronDown className="w-3.5 h-3.5 text-[#81786F] absolute right-2 pointer-events-none" />
             </div>
           </div>
         </div>
@@ -334,7 +334,7 @@ export default function ShopContent() {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
                 {sortedProducts.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}

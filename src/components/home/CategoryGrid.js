@@ -5,28 +5,28 @@ import { categories } from "@/data/categories";
 
 export default function CategoryGrid() {
   return (
-    <section className="py-20 bg-[#FFFFFF] border-b border-[#E6DED3]">
+    <section className="py-12 sm:py-20 bg-[#FFFFFF] border-b border-[#E6DED3]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-[11px] uppercase tracking-[0.25em] text-[#C6A66B] font-medium block mb-2">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#C6A66B] font-medium block mb-2">
             Curated Categories
           </span>
-          <h2 className="font-serif-luxury text-3xl sm:text-4xl text-[#27231F] font-normal tracking-tight mb-4">
+          <h2 className="font-serif-luxury text-2xl sm:text-4xl text-[#27231F] font-normal tracking-tight mb-3 sm:mb-4">
             Shop by Category
           </h2>
-          <p className="text-sm sm:text-base text-[#81786F] font-light leading-relaxed">
+          <p className="text-xs sm:text-base text-[#81786F] font-light leading-relaxed">
             Every category represents an ode to timeless geometry, sculpted precious metals, and luminous stones.
           </p>
         </div>
 
         {/* 6 Category Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {categories.map((cat) => (
             <Link
               key={cat.id}
               href={`/shop?category=${cat.slug}`}
-              className="group relative overflow-hidden bg-[#F2EDE4] border border-[#E6DED3] flex flex-col justify-end aspect-[4/5] p-6 sm:p-8"
+              className="group relative overflow-hidden bg-[#F2EDE4] border border-[#E6DED3] flex flex-col justify-end aspect-[4/5] p-5 sm:p-8"
             >
               {/* Background Image with Zoom */}
               <div className="absolute inset-0">

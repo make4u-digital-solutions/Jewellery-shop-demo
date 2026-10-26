@@ -127,9 +127,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#81786F] gap-4 font-light">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#81786F] gap-4 font-light text-center sm:text-left">
           <p>© {new Date().getFullYear()} AURELLE Haute Joaillerie. All rights reserved. Demo Storefront.</p>
-          <div className="flex items-center space-x-6 text-[11px]">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 sm:gap-x-4 gap-y-1 text-[11px]">
             <span>Quiet Luxury Atelier</span>
             <span>•</span>
             <span>18K Hallmarked Gold Demo</span>

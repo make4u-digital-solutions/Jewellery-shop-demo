@@ -54,10 +54,10 @@ export default function CraftsmanshipSection() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 bg-[#F7F3ED] border-b border-[#E6DED3] overflow-hidden"
+      className="py-12 sm:py-24 bg-[#F7F3ED] border-b border-[#E6DED3] overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Left Column: Craftsmanship Photography */}
           <div
             ref={imageWrapperRef}
@@ -71,8 +71,8 @@ export default function CraftsmanshipSection() {
               className="object-cover object-center"
             />
             {/* Minimalist Inset Caption */}
-            <div className="absolute bottom-6 left-6 p-4 bg-white/90 backdrop-blur-sm border border-[#E6DED3] max-w-xs">
-              <p className="text-[10px] uppercase tracking-widest text-[#C6A66B] font-medium">
+            <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-auto p-3 sm:p-4 bg-white/95 backdrop-blur-sm border border-[#E6DED3] max-w-none sm:max-w-xs">
+              <p className="text-[9px] sm:text-[10px] uppercase tracking-widest text-[#C6A66B] font-medium">
                 Atelier Philosophy
               </p>
               <p className="font-serif-luxury text-xs text-[#27231F] mt-1 font-light italic">
@@ -83,29 +83,29 @@ export default function CraftsmanshipSection() {
 
           {/* Right Column: Editorial Copy */}
           <div ref={contentRef} className="lg:col-span-6 flex flex-col justify-center">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="w-8 h-[1px] bg-[#C6A66B]" />
-              <span className="text-[11px] uppercase tracking-[0.25em] text-[#C6A66B] font-medium">
+            <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+              <span className="w-6 sm:w-8 h-[1px] bg-[#C6A66B]" />
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#C6A66B] font-medium">
                 The AURELLE Distinction
               </span>
             </div>
 
-            <h2 className="font-serif-luxury text-3xl sm:text-5xl text-[#27231F] font-normal tracking-tight leading-[1.15] mb-6">
+            <h2 className="font-serif-luxury text-2xl sm:text-4xl lg:text-5xl text-[#27231F] font-normal tracking-tight leading-[1.15] mb-4 sm:mb-6">
               Made to Be Kept. Designed to Be Remembered.
             </h2>
 
-            <p className="text-base text-[#81786F] font-light leading-relaxed mb-6">
+            <p className="text-sm sm:text-base text-[#81786F] font-light leading-relaxed mb-4 sm:mb-6">
               In a world of fleeting trends, AURELLE crafts with archival intent. We reject the ephemeral in pursuit of enduring poise. Each solitaire cradle, each articulating necklace link, and each polished bezel is sculpted to hold memory and emotion across lifetimes.
             </p>
 
-            <p className="text-sm text-[#81786F] font-light leading-relaxed mb-8">
+            <p className="text-xs sm:text-sm text-[#81786F] font-light leading-relaxed mb-6 sm:mb-8">
               We source only verified 18K recycled gold and conflict-free gemstones, ensuring that every ounce of beauty we create leaves an honorable legacy for generations to come.
             </p>
 
             {/* Three Pillar Icons */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10 pt-4 border-t border-[#E6DED3]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-10 pt-4 border-t border-[#E6DED3]">
               <div className="space-y-1">
-                <Sparkles className="w-5 h-5 text-[#C6A66B] mb-2" />
+                <Sparkles className="w-5 h-5 text-[#C6A66B] mb-1.5 sm:mb-2" />
                 <h4 className="font-serif-luxury text-base text-[#27231F] font-medium">
                   Micro-Pavé Precision
                 </h4>
@@ -114,7 +114,7 @@ export default function CraftsmanshipSection() {
                 </p>
               </div>
               <div className="space-y-1">
-                <ShieldCheck className="w-5 h-5 text-[#C6A66B] mb-2" />
+                <ShieldCheck className="w-5 h-5 text-[#C6A66B] mb-1.5 sm:mb-2" />
                 <h4 className="font-serif-luxury text-base text-[#27231F] font-medium">
                   Ethical Provenance
                 </h4>
@@ -123,7 +123,7 @@ export default function CraftsmanshipSection() {
                 </p>
               </div>
               <div className="space-y-1">
-                <Compass className="w-5 h-5 text-[#C6A66B] mb-2" />
+                <Compass className="w-5 h-5 text-[#C6A66B] mb-1.5 sm:mb-2" />
                 <h4 className="font-serif-luxury text-base text-[#27231F] font-medium">
                   Quiet Geometry
                 </h4>
@@ -136,7 +136,7 @@ export default function CraftsmanshipSection() {
             <div>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 py-4 px-8 bg-[#211E1A] hover:bg-[#C6A66B] text-[#F7F3ED] hover:text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors shadow-md group"
+                className="inline-flex items-center justify-center gap-2 py-3.5 sm:py-4 px-6 sm:px-8 bg-[#211E1A] hover:bg-[#C6A66B] text-[#F7F3ED] hover:text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors shadow-md group w-full sm:w-auto text-center"
               >
                 <span>Read Our Full Story</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

@@ -23,25 +23,25 @@ export default function TestimonialsSection() {
   const current = testimonials[currentIndex];
 
   return (
-    <section className="py-24 bg-[#FFFFFF] border-b border-[#E6DED3]">
+    <section className="py-12 sm:py-24 bg-[#FFFFFF] border-b border-[#E6DED3]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <span className="text-[11px] uppercase tracking-[0.25em] text-[#C6A66B] font-medium block mb-2">
+        <div className="text-center mb-8 sm:mb-12">
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#C6A66B] font-medium block mb-1.5 sm:mb-2">
             Patron Reflections
           </span>
-          <h2 className="font-serif-luxury text-3xl sm:text-4xl text-[#27231F] font-normal tracking-tight">
+          <h2 className="font-serif-luxury text-2xl sm:text-4xl text-[#27231F] font-normal tracking-tight">
             Words from Our Circle
           </h2>
-          <p className="text-xs text-[#81786F] mt-2 italic font-light">
+          <p className="text-xs text-[#81786F] mt-1.5 italic font-light">
             (Illustrative Demo Feedback)
           </p>
         </div>
 
         {/* Carousel / Editorial Quote Box */}
-        <div className="relative bg-[#F7F3ED] border border-[#E6DED3] p-8 sm:p-14 shadow-xs">
-          <Quote className="w-12 h-12 text-[#C6A66B]/30 absolute top-8 left-8" />
+        <div className="relative bg-[#F7F3ED] border border-[#E6DED3] p-5 sm:p-14 shadow-xs">
+          <Quote className="w-8 h-8 sm:w-12 sm:h-12 text-[#C6A66B]/20 absolute top-4 left-4 sm:top-8 sm:left-8" />
 
-          <div className="min-h-[180px] flex flex-col justify-center text-center relative z-10 max-w-2xl mx-auto">
+          <div className="min-h-[160px] sm:min-h-[180px] flex flex-col justify-center text-center relative z-10 max-w-2xl mx-auto">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current.id}
@@ -49,20 +49,20 @@ export default function TestimonialsSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
                 transition={{ duration: 0.35 }}
-                className="space-y-6"
+                className="space-y-4 sm:space-y-6"
               >
                 {/* Star rating */}
                 <div className="flex justify-center gap-1">
                   {[...Array(current.rating)].map((_, i) => (
                     <Star
                       key={i}
-                      className="w-4 h-4 fill-[#C6A66B] text-[#C6A66B]"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#C6A66B] text-[#C6A66B]"
                     />
                   ))}
                 </div>
 
                 {/* Quote */}
-                <p className="font-serif-luxury text-xl sm:text-2xl text-[#27231F] italic font-light leading-relaxed">
+                <p className="font-serif-luxury text-base sm:text-2xl text-[#27231F] italic font-light leading-relaxed">
                   &ldquo;{current.quote}&rdquo;
                 </p>
 

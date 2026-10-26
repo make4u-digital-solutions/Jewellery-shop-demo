@@ -133,8 +133,8 @@ export default function AccountPage() {
           </div>
 
           {/* Right Column: Acquisition History */}
-          <div className="lg:col-span-8 bg-white border border-[#E6DED3] p-6 sm:p-8 space-y-6">
-            <h2 className="font-serif-luxury text-2xl text-[#27231F] font-medium pb-4 border-b border-[#E6DED3] flex items-center justify-between">
+          <div className="lg:col-span-8 bg-white border border-[#E6DED3] p-5 sm:p-8 space-y-6">
+            <h2 className="font-serif-luxury text-xl sm:text-2xl text-[#27231F] font-medium pb-4 border-b border-[#E6DED3] flex items-center justify-between">
               <span>Past Acquisitions (Demo)</span>
               <Package className="w-5 h-5 text-[#C6A66B]" />
             </h2>
@@ -143,7 +143,7 @@ export default function AccountPage() {
               {demoOrders.map((ord) => (
                 <div
                   key={ord.id}
-                  className="p-5 border border-[#E6DED3] bg-[#F7F3ED]/30 flex flex-col sm:flex-row justify-between sm:items-center gap-4 hover:border-[#C6A66B]/60 transition-colors"
+                  className="p-4 sm:p-5 border border-[#E6DED3] bg-[#F7F3ED]/30 flex flex-col sm:flex-row justify-between sm:items-center gap-4 hover:border-[#C6A66B]/60 transition-colors"
                 >
                   <div className="space-y-1">
                     <div className="flex items-center gap-3">
@@ -160,7 +160,7 @@ export default function AccountPage() {
                     <p className="text-xs text-[#81786F]">{ord.date}</p>
                   </div>
 
-                  <div className="text-left sm:text-right">
+                  <div className="text-left sm:text-right pt-2 sm:pt-0 border-t sm:border-t-0 border-[#E6DED3]/60">
                     <span className="font-serif-luxury text-lg font-bold text-[#27231F] block">
                       {formatPrice(ord.total)}
                     </span>
@@ -172,7 +172,7 @@ export default function AccountPage() {
               ))}
             </div>
 
-            <div className="pt-4 border-t border-[#E6DED3] flex items-center justify-between">
+            <div className="pt-4 border-t border-[#E6DED3] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="text-xs text-[#81786F]">
                 Need assistance with past acquisitions?
               </span>

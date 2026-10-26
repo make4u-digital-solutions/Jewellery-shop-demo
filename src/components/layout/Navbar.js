@@ -74,15 +74,15 @@ export default function Navbar() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="bg-[#211E1A] text-[#F7F3ED] text-[11px] sm:text-xs tracking-widest uppercase py-2 px-4 flex items-center justify-between border-b border-[#C6A66B]/20"
+              className="bg-[#211E1A] text-[#F7F3ED] text-[10px] sm:text-xs tracking-wider sm:tracking-widest uppercase py-2 px-3 sm:px-4 flex items-center justify-between border-b border-[#C6A66B]/20"
             >
-              <div className="flex-1 text-center font-light">
+              <div className="flex-1 text-center font-light leading-snug">
                 Complimentary White-Glove Shipping on Orders Above ₹5,000 | Code:{" "}
                 <span className="text-[#C6A66B] font-medium">AURELLE10</span> for 10% Off
               </div>
               <button
                 onClick={() => setShowAnnouncement(false)}
-                className="text-[#81786F] hover:text-[#F7F3ED] transition-colors p-1"
+                className="text-[#81786F] hover:text-[#F7F3ED] transition-colors p-1 shrink-0 ml-2"
                 aria-label="Dismiss announcement"
               >
                 <X className="w-3.5 h-3.5" />
@@ -135,10 +135,10 @@ export default function Navbar() {
             {/* Centered Brand Logo */}
             <div className="text-center">
               <Link href="/" className="inline-block group">
-                <span className="font-serif-luxury text-2xl sm:text-3xl tracking-[0.25em] font-light text-[#27231F] group-hover:text-[#C6A66B] transition-colors uppercase">
+                <span className="font-serif-luxury text-xl sm:text-3xl tracking-[0.2em] sm:tracking-[0.25em] font-light text-[#27231F] group-hover:text-[#C6A66B] transition-colors uppercase">
                   AURELLE
                 </span>
-                <span className="block text-[8px] tracking-[0.4em] uppercase text-[#81786F] font-light -mt-1">
+                <span className="block text-[8px] tracking-[0.35em] sm:tracking-[0.4em] uppercase text-[#81786F] font-light -mt-1">
                   Haute Joaillerie
                 </span>
               </Link>
@@ -333,7 +333,7 @@ export default function Navbar() {
                   </button>
                 </div>
 
-                <div className="flex flex-col space-y-5 mt-8">
+                <div className="flex flex-col space-y-4 mt-6">
                   {navLinks.map((link) => (
                     <Link
                       key={link.name}
@@ -344,12 +344,40 @@ export default function Navbar() {
                       {link.name}
                     </Link>
                   ))}
+
+                  {/* Categories Quick Links */}
+                  <div className="pt-3 pb-2 border-t border-[#E6DED3]/60">
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-[#C6A66B] font-semibold mb-2.5">
+                      Explore Categories
+                    </p>
+                    <div className="grid grid-cols-2 gap-2 text-xs text-[#81786F]">
+                      <Link href="/shop?category=rings" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#27231F]">
+                        • Solitaire Rings
+                      </Link>
+                      <Link href="/shop?category=necklaces" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#27231F]">
+                        • Necklaces
+                      </Link>
+                      <Link href="/shop?category=earrings" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#27231F]">
+                        • Earrings
+                      </Link>
+                      <Link href="/shop?category=bracelets" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#27231F]">
+                        • Tennis Bracelets
+                      </Link>
+                      <Link href="/shop?category=pendants" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#27231F]">
+                        • Pendants
+                      </Link>
+                      <Link href="/shop?category=bridal" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-[#27231F]">
+                        • Bridal Suites
+                      </Link>
+                    </div>
+                  </div>
+
                   <Link
                     href="/wishlist"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="font-serif-luxury text-xl text-[#27231F] hover:text-[#C6A66B] transition-colors flex items-center justify-between"
+                    className="font-serif-luxury text-lg text-[#27231F] hover:text-[#C6A66B] transition-colors flex items-center justify-between pt-1 border-t border-[#E6DED3]/60"
                   >
-                    <span>Wishlist</span>
+                    <span>Curated Wishlist</span>
                     {totalWishlistCount > 0 && (
                       <span className="text-xs bg-[#C6A66B] text-white px-2 py-0.5 rounded-full font-sans">
                         {totalWishlistCount}
@@ -359,7 +387,7 @@ export default function Navbar() {
                   <Link
                     href="/account"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="font-serif-luxury text-xl text-[#27231F] hover:text-[#C6A66B] transition-colors"
+                    className="font-serif-luxury text-lg text-[#27231F] hover:text-[#C6A66B] transition-colors"
                   >
                     Client Concierge Portal
                   </Link>

@@ -53,19 +53,19 @@ export default function ConfirmationContent() {
   };
 
   return (
-    <div className="bg-[#F7F3ED] min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-[#F7F3ED] min-h-screen py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         {/* Main Card */}
-        <div className="bg-white border border-[#E6DED3] p-8 sm:p-12 shadow-sm">
+        <div className="bg-white border border-[#E6DED3] p-5 sm:p-12 shadow-sm">
           {/* Header */}
-          <div className="text-center pb-8 border-b border-[#E6DED3]">
-            <div className="w-16 h-16 rounded-full bg-[#F7F3ED] border border-[#C6A66B] flex items-center justify-center mx-auto mb-4 text-[#C6A66B]">
-              <CheckCircle className="w-8 h-8" />
+          <div className="text-center pb-6 sm:pb-8 border-b border-[#E6DED3]">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#F7F3ED] border border-[#C6A66B] flex items-center justify-center mx-auto mb-3 sm:mb-4 text-[#C6A66B]">
+              <CheckCircle className="w-7 h-7 sm:w-8 sm:h-8" />
             </div>
-            <span className="text-[11px] uppercase tracking-[0.25em] text-[#C6A66B] font-medium block mb-1">
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-[#C6A66B] font-medium block mb-1">
               Acquisition Confirmed • Demo Order
             </span>
-            <h1 className="font-serif-luxury text-3xl sm:text-4xl text-[#27231F] font-normal tracking-tight mb-2">
+            <h1 className="font-serif-luxury text-2xl sm:text-4xl text-[#27231F] font-normal tracking-tight mb-2">
               Thank You for Your Order
             </h1>
             <p className="text-xs sm:text-sm text-[#81786F] font-light max-w-md mx-auto">

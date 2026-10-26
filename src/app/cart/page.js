@@ -108,9 +108,9 @@ export default function CartPage() {
                 </div>
 
                 {items.map((item) => (
-                  <div key={item.itemId} className="py-6 flex flex-col sm:flex-row gap-6">
+                  <div key={item.itemId} className="py-4 sm:py-6 flex flex-row gap-3.5 sm:gap-6">
                     {/* Item Image */}
-                    <div className="relative w-24 h-28 sm:w-28 sm:h-32 bg-[#F2EDE4] overflow-hidden border border-[#E6DED3] shrink-0">
+                    <div className="relative w-20 h-24 sm:w-28 sm:h-32 bg-[#F2EDE4] overflow-hidden border border-[#E6DED3] shrink-0">
                       <Image
                         src={item.image}
                         alt={item.name}

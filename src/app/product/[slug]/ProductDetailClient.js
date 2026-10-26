@@ -177,12 +177,12 @@ export default function ProductDetailClient({ product, relatedProducts = [] }) {
               </div>
 
               {/* Product Title */}
-              <h1 className="font-serif-luxury text-3xl sm:text-4xl text-[#27231F] font-normal leading-tight mb-3">
+              <h1 className="font-serif-luxury text-2xl sm:text-4xl text-[#27231F] font-normal leading-tight mb-2.5 sm:mb-3">
                 {product.name}
               </h1>
 
               {/* Rating and Demo Note */}
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <div className="flex items-center text-[#C6A66B]">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -200,16 +200,16 @@ export default function ProductDetailClient({ product, relatedProducts = [] }) {
               </div>
 
               {/* Price Block */}
-              <div className="py-4 border-y border-[#E6DED3] flex items-baseline gap-4 mb-6">
-                <span className="font-serif-luxury text-3xl font-semibold text-[#27231F]">
+              <div className="py-3 sm:py-4 border-y border-[#E6DED3] flex flex-wrap sm:flex-nowrap items-baseline gap-2 sm:gap-4 mb-5 sm:mb-6">
+                <span className="font-serif-luxury text-2xl sm:text-3xl font-semibold text-[#27231F]">
                   {formatPrice(product.price)}
                 </span>
                 {product.originalPrice && product.originalPrice > product.price && (
-                  <span className="text-sm text-[#81786F] line-through font-light">
+                  <span className="text-xs sm:text-sm text-[#81786F] line-through font-light">
                     {formatPrice(product.originalPrice)}
                   </span>
                 )}
-                <span className="text-[11px] text-[#81786F] ml-auto uppercase tracking-wider">
+                <span className="text-[10px] sm:text-[11px] text-[#81786F] sm:ml-auto uppercase tracking-wider block w-full sm:w-auto">
                   Inclusive of all demo taxes
                 </span>
               </div>

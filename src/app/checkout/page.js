@@ -185,12 +185,12 @@ export default function CheckoutPage() {
         </span>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
-        <form onSubmit={handlePlaceOrder} className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10">
+        <form onSubmit={handlePlaceOrder} className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
           {/* Left Column: Client Details, Address, Delivery, Payment */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:col-span-7 space-y-6 sm:space-y-8">
             {/* 1. Contact Information */}
-            <div className="bg-white border border-[#E6DED3] p-6 sm:p-8">
+            <div className="bg-white border border-[#E6DED3] p-5 sm:p-8">
               <h2 className="font-serif-luxury text-xl text-[#27231F] font-medium pb-3 border-b border-[#E6DED3] mb-6 flex items-center justify-between">
                 <span>1. Contact Details</span>
                 <span className="text-xs uppercase tracking-widest text-[#81786F] font-sans">

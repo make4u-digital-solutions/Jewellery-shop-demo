@@ -77,13 +77,13 @@ export default function HeroSection() {
       ref={containerRef}
       className="relative min-h-[88vh] lg:min-h-[92vh] flex items-center bg-[#F7F3ED] overflow-hidden border-b border-[#E6DED3]"
     >
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Column: Editorial Typography */}
         <div className="lg:col-span-6 z-10 flex flex-col justify-center">
           {/* Collection Label */}
-          <div ref={tagRef} className="flex items-center gap-3 mb-6">
-            <span className="w-8 h-[1px] bg-[#C6A66B]" />
-            <span className="text-[11px] uppercase tracking-[0.25em] font-medium text-[#C6A66B]">
+          <div ref={tagRef} className="flex items-center gap-2.5 sm:gap-3 mb-4 sm:mb-6">
+            <span className="w-6 sm:w-8 h-[1px] bg-[#C6A66B]" />
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] font-medium text-[#C6A66B]">
               Haute Joaillerie Atelier • Collection 2026
             </span>
           </div>
@@ -91,7 +91,7 @@ export default function HeroSection() {
           {/* Headline */}
           <h1
             ref={headingRef}
-            className="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl text-[#27231F] font-normal tracking-tight leading-[1.12] mb-6"
+            className="font-serif-luxury text-3xl sm:text-5xl lg:text-6xl text-[#27231F] font-normal tracking-tight leading-[1.15] sm:leading-[1.12] mb-4 sm:mb-6"
           >
             Jewellery That Becomes Part of Your Story.
           </h1>
@@ -99,41 +99,41 @@ export default function HeroSection() {
           {/* Supporting Text */}
           <p
             ref={textRef}
-            className="text-base sm:text-lg text-[#81786F] font-light leading-relaxed max-w-lg mb-8"
+            className="text-sm sm:text-lg text-[#81786F] font-light leading-relaxed max-w-lg mb-6 sm:mb-8"
           >
             Discover thoughtfully designed pieces that celebrate your individuality, your milestones, and the moments that matter. Handcrafted in sculpted 18K solid gold and luminous gemstones.
           </p>
 
           {/* CTAs */}
-          <div ref={ctaRef} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          <div ref={ctaRef} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full">
             <Link
               href="/shop"
-              className="py-4 px-8 bg-[#211E1A] hover:bg-[#C6A66B] text-[#F7F3ED] hover:text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors text-center shadow-md flex items-center justify-center gap-2 group"
+              className="py-3.5 sm:py-4 px-6 sm:px-8 bg-[#211E1A] hover:bg-[#C6A66B] text-[#F7F3ED] hover:text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors text-center shadow-md flex items-center justify-center gap-2 group w-full sm:w-auto"
             >
               <span>Explore Collection</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               href="/about"
-              className="py-4 px-8 border border-[#27231F] text-[#27231F] hover:bg-[#27231F] hover:text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors text-center"
+              className="py-3.5 sm:py-4 px-6 sm:px-8 border border-[#27231F] text-[#27231F] hover:bg-[#27231F] hover:text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors text-center w-full sm:w-auto"
             >
               Discover Our Story
             </Link>
           </div>
 
           {/* Subtle Trust Indicators */}
-          <div className="mt-12 pt-8 border-t border-[#E6DED3]/80 grid grid-cols-3 gap-4 text-xs text-[#81786F]">
+          <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-[#E6DED3]/80 grid grid-cols-3 gap-2 sm:gap-4 text-xs text-[#81786F] text-center sm:text-left">
             <div>
-              <p className="font-serif-luxury text-lg text-[#27231F] font-medium">18K Solid</p>
-              <p className="font-light">Recycled Gold</p>
+              <p className="font-serif-luxury text-base sm:text-lg text-[#27231F] font-medium">18K Solid</p>
+              <p className="font-light text-[10px] sm:text-xs">Recycled Gold</p>
             </div>
             <div>
-              <p className="font-serif-luxury text-lg text-[#27231F] font-medium">Conflict-Free</p>
-              <p className="font-light">Ethical Diamonds</p>
+              <p className="font-serif-luxury text-base sm:text-lg text-[#27231F] font-medium">Conflict-Free</p>
+              <p className="font-light text-[10px] sm:text-xs">Ethical Diamonds</p>
             </div>
             <div>
-              <p className="font-serif-luxury text-lg text-[#27231F] font-medium">Bespoke</p>
-              <p className="font-light">Atelier Finishing</p>
+              <p className="font-serif-luxury text-base sm:text-lg text-[#27231F] font-medium">Bespoke</p>
+              <p className="font-light text-[10px] sm:text-xs">Atelier Finishing</p>
             </div>
           </div>
         </div>
@@ -157,19 +157,19 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.8 }}
-              className="absolute bottom-6 left-6 right-6 p-4 bg-white/90 backdrop-blur-md border border-[#E6DED3] flex items-center justify-between"
+              className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-3 sm:p-4 bg-white/95 backdrop-blur-md border border-[#E6DED3] flex items-center justify-between"
             >
               <div>
-                <p className="text-[10px] uppercase tracking-widest text-[#C6A66B] font-medium">
+                <p className="text-[9px] sm:text-[10px] uppercase tracking-widest text-[#C6A66B] font-medium">
                   Signature Creation
                 </p>
-                <p className="font-serif-luxury text-sm sm:text-base text-[#27231F] font-medium">
+                <p className="font-serif-luxury text-xs sm:text-base text-[#27231F] font-medium">
                   The Soleil Medallion & Celestia Solitaire
                 </p>
               </div>
               <Link
                 href="/shop"
-                className="text-xs uppercase tracking-widest font-medium text-[#27231F] hover:text-[#C6A66B] flex items-center gap-1"
+                className="text-[11px] sm:text-xs uppercase tracking-widest font-medium text-[#27231F] hover:text-[#C6A66B] flex items-center gap-1 shrink-0 ml-2"
               >
                 <span>View</span>
                 <ArrowRight className="w-3.5 h-3.5" />

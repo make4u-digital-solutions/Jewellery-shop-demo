@@ -14,23 +14,23 @@ export default function AboutPage() {
     <div className="bg-[#F7F3ED] min-h-screen pb-24">
       {/* Editorial Hero */}
       <div className="bg-white border-b border-[#E6DED3]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20 text-center">
           <Breadcrumbs items={[{ label: "Our Story" }]} />
-          <span className="text-[11px] uppercase tracking-[0.3em] text-[#C6A66B] font-medium block mt-4 mb-2">
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[#C6A66B] font-medium block mt-3 mb-2">
             Maison Philosophy & Heritage
           </span>
-          <h1 className="font-serif-luxury text-4xl sm:text-6xl text-[#27231F] font-normal tracking-tight max-w-3xl mx-auto leading-tight">
+          <h1 className="font-serif-luxury text-3xl sm:text-6xl text-[#27231F] font-normal tracking-tight max-w-3xl mx-auto leading-tight">
             Quiet Luxury Handcrafted with Archival Intent.
           </h1>
-          <p className="text-base sm:text-lg text-[#81786F] font-light max-w-2xl mx-auto mt-6 leading-relaxed">
+          <p className="text-sm sm:text-lg text-[#81786F] font-light max-w-2xl mx-auto mt-4 sm:mt-6 leading-relaxed">
             Founded with the belief that fine jewellery should be as personal as the skin it graces, AURELLE redefines heirloom ornaments for the discerning modern aesthete.
           </p>
         </div>
       </div>
 
       {/* Magazine Split Story 1: The Origin */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           <div className="lg:col-span-6 relative aspect-[4/5] border border-[#E6DED3] overflow-hidden shadow-lg">
             <Image
               src="https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&w=1200&q=80"
@@ -39,17 +39,17 @@ export default function AboutPage() {
               className="object-cover"
             />
           </div>
-          <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs uppercase tracking-widest text-[#C6A66B] font-medium block">
+          <div className="lg:col-span-6 space-y-4 sm:space-y-6">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#C6A66B] font-medium block">
               Chapter I — Genesis
             </span>
-            <h2 className="font-serif-luxury text-3xl sm:text-4xl text-[#27231F] font-normal leading-snug">
+            <h2 className="font-serif-luxury text-2xl sm:text-4xl text-[#27231F] font-normal leading-snug">
               Born from a Reverence for Sculpture & Light
             </h2>
-            <p className="text-sm sm:text-base text-[#81786F] font-light leading-relaxed">
+            <p className="text-xs sm:text-base text-[#81786F] font-light leading-relaxed">
               AURELLE was established in our Mumbai atelier with a single mandate: to remove the ostentatious noise from fine jewellery and resurrect the calm dignity of quiet luxury. We view gold not merely as a precious commodity, but as a fluid, tactile medium capable of holding time.
             </p>
-            <p className="text-sm sm:text-base text-[#81786F] font-light leading-relaxed">
+            <p className="text-xs sm:text-base text-[#81786F] font-light leading-relaxed">
               Every curve of our rings and each hand-filed basket of our solitaires begins as a hand-drawn pencil silhouette. Our master goldsmiths spend decades refining the balance between structural weight and effortless weightlessness on the skin.
             </p>
           </div>
@@ -57,13 +57,13 @@ export default function AboutPage() {
       </div>
 
       {/* Three Core Pillars Banner */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="bg-[#211E1A] text-[#F7F3ED] p-10 sm:p-16 border border-[#C6A66B]/30">
-          <div className="text-center max-w-xl mx-auto mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+        <div className="bg-[#211E1A] text-[#F7F3ED] p-6 sm:p-16 border border-[#C6A66B]/30">
+          <div className="text-center max-w-xl mx-auto mb-8 sm:mb-12">
             <span className="text-[10px] uppercase tracking-[0.3em] text-[#C6A66B] font-medium block mb-2">
               The Three Tenets
             </span>
-            <h3 className="font-serif-luxury text-3xl sm:text-4xl font-normal">
+            <h3 className="font-serif-luxury text-2xl sm:text-4xl font-normal">
               Our Guiding Principles
             </h3>
           </div>
