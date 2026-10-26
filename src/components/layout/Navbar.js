@@ -60,7 +60,6 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Shop", href: "/shop" },
-    { name: "Collections", href: "/shop?collection=Golden+Hour" },
     { name: "Our Story", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];

@@ -28,7 +28,7 @@ export const categories = [
     name: "Bracelets",
     slug: "bracelets",
     description: "Flexible tennis bracelets, gold cuffs, and delicate chains.",
-    image: "https://images.unsplash.com/photo-1611591475837-14224094a919?auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=1000&q=80",
     itemCount: "19 Creations",
   },
   {

@@ -114,7 +114,7 @@ export const products = [
     shortDescription: "A contemporary reimagining of the classic line bracelet with supple four-prong links.",
     description: "The Serpentine Bracelet is engineered for constant tactile pleasure. Hand-assembled by master stone setters in pure Platinum 950, each individual diamond is nested within minimal four-prong baskets that yield remarkable flexibility, ensuring it contours naturally around your wrist.",
     images: [
-      "https://images.unsplash.com/photo-1611591475837-14224094a919?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&w=1200&q=80",
     ],
     sizes: ["6.5 inch", "7.0 inch", "7.5 inch"],
@@ -271,7 +271,7 @@ export const products = [
     shortDescription: "An ergonomic open cuff with molten ripples sculpted by hand in heavy 18K gold.",
     description: "A testament to master metalsmithing. The Atelier Wave Cuff mimics the fluid undulation of desert dunes at sunset, balancing substantial weight with effortless ergonomics.",
     images: [
-      "https://images.unsplash.com/photo-1611591475837-14224094a919?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&w=1200&q=80",
     ],
     sizes: ["Small (5.5 - 6.2 in)", "Medium (6.3 - 7.0 in)"],
